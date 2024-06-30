@@ -1,0 +1,19 @@
+linters-settings:
+  gofmt:
+    simplify: true
+  goimports:
+    local-prefixes: github.com/yourname/yourproject
+  golint:
+    min-confidence: 0.8
+
+linters:
+  enable:
+    - gofmt
+    - goimports
+    - gocyclo
+    - gosimple 
+    - govet 
+    - ineffassign
+    - unused
+    - staticcheck
+    - errcheck
